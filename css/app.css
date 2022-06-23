@@ -121,3 +121,35 @@ body {
 
 /* CARDS SECTION */
 
+.main-section {
+    padding-top: 110px;
+}
+
+
+.title-section {
+    font-size: 42px;
+    line-height: 110px;
+    font-weight: 700;
+}
+
+.checkbox-text {
+    padding-right: 45px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.plans-cards {
+    flex-wrap: wrap;
+    gap: 110px;
+    margin-top: 45px;
+}
+
+.plans-cards .col {
+    height: 500px;
+    border: solid red 3px;
+    flex-basis: calc((100% - 220px) / 3);    
+}
+
+.plans-cards :last-child {
+    flex-grow: 1;
+}
