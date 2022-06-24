@@ -160,7 +160,7 @@ body {
     flex-basis: 0;   
 }
 
-.plans-cards :last-child {
+.plans-cards :last-child:not(.col-30) {
     flex-basis: calc(100% * 1);
 }
 
@@ -181,10 +181,17 @@ body {
     border-bottom: solid rgb(216, 216, 216) 1px;
 }
 
+.card-header i {
+    padding-right: 5px;
+}
+
 
 .card-container {
-    max-width: 230px;
-    margin: 0 auto;
+    /* max-width: 230px;
+    margin: 0 auto; */
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;      ;
 }
 
 .card-titles {
@@ -206,6 +213,7 @@ body {
 
 .features {
     padding: 30px 0;
+    max-height: 200px;
 }
 
 .features li {
@@ -215,7 +223,7 @@ body {
 
 
 .features i {
-    padding-right: 5px;
+    padding-right: 8px;
 }
 
 .card-cta {
@@ -240,8 +248,9 @@ body {
 }
 
 .card > hr {
-    margin: 30px auto;
+    margin: 30px 0;
     max-width: 100px;
+    margin-left: 30px;
     
 }
 
@@ -258,6 +267,20 @@ body {
 
 .card-footer i {
     color: blue;
+}
+
+.col-70 {
+    flex-basis: 70%;
+    /* border: solid red 3px; */
+}
+
+.col-30 {
+    flex-basis: 30%;
+}
+
+.col-30 .button {
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* CARD SECTION ENDS */
