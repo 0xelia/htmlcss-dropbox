@@ -325,3 +325,28 @@ body {
     display: inline-block;
 
 }
+
+/* Operations Section */
+
+.operations {
+    margin-top: 90px;
+}
+
+.operations .title-section {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.operations .flex {
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.operations .col {
+    flex-basis: calc((100% - 100px) / 3);
+}
+
+.header-operations-card h4 {
+    font-size: 24px;
+    padding-bottom: 25px;
+}
