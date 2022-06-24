@@ -102,6 +102,14 @@ body {
 
 .jumbo {
     flex-basis: 70%;
+    position: relative;
+}
+
+.jumbo > img {                      
+    position: absolute;
+    bottom: -60px;
+    /* aspect-ratio: 16/9; */
+    height: 445px;
 }
 
 .description {
@@ -142,23 +150,25 @@ body {
 
 .plans-cards {
     flex-wrap: wrap;
-    gap: 110px;
+    gap: 45px;
     margin-top: 45px;
 }
 
 .plans-cards .col {
-    height: 500px;
-    flex-basis: calc((100% - 220px) / 3);    
+    /* height: 500px; */
+    flex-grow: 1;
+    flex-basis: 0;   
 }
 
 .plans-cards :last-child {
-    flex-grow: 1;
+    flex-basis: calc(100% * 1);
 }
 
 .card {
     border: solid rgb(216, 216, 216) 1px;
     font-size: 14px;
     font-weight: 300;
+    height: 100%;
 }
 
 .card i {
@@ -171,9 +181,6 @@ body {
     border-bottom: solid rgb(216, 216, 216) 1px;
 }
 
-.card-header::after {
-    content: 'Singolo';
-}
 
 .card-container {
     max-width: 230px;
