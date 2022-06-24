@@ -18,6 +18,10 @@ img {
     max-width: 100%;
 }
 
+hr {
+    opacity: 0;
+}
+
 /* DEBUG */
 
 /* .debug * {
@@ -251,6 +255,7 @@ body {
     margin: 30px 0;
     max-width: 100px;
     margin-left: 30px;
+    opacity: 100%;
     
 }
 
@@ -284,3 +289,39 @@ body {
 }
 
 /* CARD SECTION ENDS */
+
+/* SINGLE IMAGE SECTION */
+
+.single-image-section {
+    margin-top: 100px;
+}
+
+.single-image-section .col-3 {
+    flex-grow: 3;
+    flex-basis: 0;
+}
+
+.single-image-section .col-2 {
+    flex-grow: 2;
+    flex-basis: 0;
+    
+}
+
+.card-description {
+    padding: 40px 80px 0 50px;
+}
+
+.card-description > h4 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.card-description .button {
+    margin-top: 30px;
+    color: black;
+    background-color: transparent;
+    border: solid black 1px;
+    display: inline-block;
+
+}
