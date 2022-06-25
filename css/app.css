@@ -274,9 +274,17 @@ body {
     color: blue;
 }
 
+.card:last-child .card-container {
+    margin-bottom: 20px;
+}
+
 .col-70 {
     flex-basis: 70%;
     /* border: solid red 3px; */
+}
+
+ .col-70 .price + p {
+    padding-top: 40px;
 }
 
 .col-30 {
@@ -347,6 +355,97 @@ body {
 }
 
 .header-operations-card h4 {
+    padding-left: 20px;
     font-size: 24px;
     padding-bottom: 25px;
+}
+
+.main-operations-cards {
+    padding-left: 20px;
+
+}
+
+/* SOCIAL PROOF SECTION */
+
+.social-proof {
+    margin-top: 130px;
+}
+
+.social-proof  .title-section {
+    padding-right: 350px;
+    line-height: 45px;
+    margin-bottom: 70px;
+}
+
+
+.cta-social-proof {
+    color: blue;
+    text-decoration: underline;
+    padding-bottom: 120px;
+}
+
+/* ICONS */
+
+.icons-social-proof {
+    margin-top: 120px;
+}
+
+.icons-social-proof .col {
+    flex-basis: calc(100% / 3);;
+    flex-wrap: wrap;
+}
+
+.icons-social-proof .icons {
+    flex-basis: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+
+}
+
+.icons-social-proof .icons:hover {
+    box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+.icons-social-proof svg {
+    fill: white;
+    max-width: 150px;
+    margin: 0 auto;
+    
+}
+
+/* ICONS LEFT */
+
+.icons-social-proof .col.left .icons:first-child {
+    background-color: lightgreen;
+}
+
+.icons-social-proof .col.left .icons:nth-child(2) {
+    background-color: #61082B;
+}
+
+.icons-social-proof .col.left .icons:nth-child(3) {
+    background-color: #0093CE;
+}
+
+.icons-social-proof .col.left .icons:last-child {
+    background-color: #FF1C1C;
+}
+
+/* ICONS RIGHT */
+
+.icons-social-proof .col.right .icons:first-child {
+    background-color: #D5001F;
+}
+
+.icons-social-proof .col.right .icons:nth-child(2) {
+    background-color: #B4D0E7;
+}
+
+.icons-social-proof .col.right .icons:nth-child(3) {
+    background-color: #0D2481;
+}
+
+.icons-social-proof .col.right .icons:last-child {
+    background-color: #FFD830;
 }
