@@ -525,3 +525,41 @@ body {
 .question-box:last-child {
     border-bottom: solid black 1px;
 }
+
+/* FOOTER */
+
+.main-footer {
+    background-color: black;
+    color: white;
+    padding: 60px 0;
+}
+
+.main-footer .flex {
+    justify-content: space-between;
+}
+
+.main-footer .footer-title {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.link li {
+    font-size: 12px;
+    font-weight: 200;
+    padding: 5px 0;
+}
+
+
+.select {
+    padding-top: 60px;
+    font-size: 12px;
+}
+
+.select::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 15%;
+    background-color: white;
+    margin-bottom: 20px;
+}
