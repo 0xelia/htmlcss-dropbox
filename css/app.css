@@ -195,7 +195,7 @@ body {
     margin: 0 auto; */
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 50px;      ;
+    margin-bottom: 50px;      
 }
 
 .card-titles {
@@ -400,6 +400,7 @@ body {
     aspect-ratio: 1/1;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -407,11 +408,10 @@ body {
     box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.6);
 }
 
-.icons-social-proof svg {
-    fill: white;
-    max-width: 150px;
-    margin: 0 auto;
-    
+
+.icons > .logo {
+    max-width: 55%;
+    filter: invert(1);
 }
 
 /* ICONS LEFT */
@@ -432,6 +432,37 @@ body {
     background-color: #FF1C1C;
 }
 
+/* ICON DESCRIPTION */
+
+.testimonial-container {
+    padding: 20px;
+    background-color: rgb(239, 239, 239);
+}
+
+.testimonial-container .flex {
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.testimonial-container q::before {
+    content: "";
+    display: block;
+    max-width: 20%;
+    height: 1px;
+    background-color: black; 
+    margin-bottom: 20px;
+}
+
+.testimonial-container img {
+    max-height: 50px;
+}
+
+.testimonial-container q,
+.testimonial-container address {
+    font-size: 14px;
+}
+
 /* ICONS RIGHT */
 
 .icons-social-proof .col.right .icons:first-child {
@@ -449,3 +480,28 @@ body {
 .icons-social-proof .col.right .icons:last-child {
     background-color: #FFD830;
 }
+
+/* CALL TO ACTION SECTION */
+
+.cta-section {
+    background-color: #B4D0E7;
+    padding: 100px 0;
+}
+
+.cta-section .flex {
+    justify-content:space-between ;
+}
+.cta-section .col-50 {
+    flex-basis: 50%;
+}
+
+.cta-section h4 {
+    font-size: 36px;
+}
+
+.cta-section .button {
+    display: inline-block;
+    background-color: white;
+    color: black
+}
+
