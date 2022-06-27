@@ -505,3 +505,23 @@ body {
     color: black
 }
 
+/* FAQ */
+.faq {
+    padding: 100px 0;
+}
+
+.faq .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.question-box li {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid black 1px;
+    padding: 30px 0;
+}
+
+.question-box:last-child {
+    border-bottom: solid black 1px;
+}
